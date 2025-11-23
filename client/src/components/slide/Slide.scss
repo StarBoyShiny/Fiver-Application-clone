@@ -1,0 +1,45 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  
+  .container {
+    width: 1400px;
+    position: relative;
+    //.slidk-slide ne we get control of container
+    .slick-slide {
+      display: flex;
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+    
+    }
+
+    //with code below u can apply css on both arrow but only on background of arrow
+    .slick-arrow {
+      background: #1dbf73; /* Background color of arrows */
+      border-radius: 50%; /* Make arrows round */
+      width: 40px; /* Width of the arrows */
+      height: 40px; /* Height of the arrows */
+      z-index: 1; /* Ensure arrows are on top */
+      // position:absolute;
+      // top: 0;
+      // bottom: 0;
+      // margin: auto;
+    }
+
+    .slick-prev {
+      left: 0px; /* Position the left arrow */
+    }
+
+    .slick-next {
+      right: 0px; /* Position the right arrow */
+    }
+    
+    //with code below u can change color of arrow not that green background
+    .slick-prev::before,
+    .slick-next::before {
+      color:#fff; /* Arrow icon color */
+      font-size: 24px; /* Size of the arrow icon */
+    }
+  }
+}
